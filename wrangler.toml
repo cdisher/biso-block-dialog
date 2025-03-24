@@ -1,5 +1,6 @@
 name = "block-dialog"
 compatibility_date = "2024-03-20"
+account_id = "bc69d387dd3fee2a81ab93266ebcfa0e"
 
 # Add Pages configuration
 [pages]
