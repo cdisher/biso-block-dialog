@@ -109,10 +109,15 @@ function BlockPage() {
 }
 
 function App() {
+  // Get the base URL from the environment or default to '/'
+  const basename = import.meta.env.BASE_URL || '/';
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/block" element={<BlockPage />} />
+        {/* Add a default route that redirects to /block */}
+        <Route path="/" element={<BlockPage />} />
       </Routes>
     </Router>
   );
